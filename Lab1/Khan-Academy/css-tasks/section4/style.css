@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(255, 240, 240);
+}
+.german {
+    color: rgb(135, 4, 4);
+}
+#wine-li {
+    color: white;
+    background-color: black;
+}
+#wine-li::marker {
+    color: black;
+} /*color of a numeration was changed so its fixation*/
+
+#brot-li {
+    background-color: red;
+}
+#milch-li {
+    background-color: yellow;
+}
