@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+
+a {
+    font-weight: bold;
+}
+
+p {
+    font-style: italic;
+}
+
+h6 {
+    font-size: 1em;
+}

@@ -1,0 +1,19 @@
+body {
+    font-family: cursive;
+}
+
+.image-small {
+    width: 150px;
+}
+.image-medium {
+    width: 200px;
+}
+.black-frame {
+    border: 8px double rgb(38, 38, 38);
+}
+.gold-frame {
+    border: 10px ridge rgb(255, 183, 0);
+}
+.silver-frame {
+    border: 10px groove rgb(204, 204, 204);
+}
