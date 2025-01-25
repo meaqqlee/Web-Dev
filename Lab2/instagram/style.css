@@ -1,0 +1,143 @@
+:root {
+    /* font-sizes */
+    --font-small: 12px;
+    --font-medium: 16x;
+    --font-large: 24px;
+
+    /* paddings */
+    --padding-small: 8px;
+    --padding-medium: 12px;
+    --padding-large: 16px;
+
+    /* colors */
+    --color-primary: #262626;
+    --color-secondary: #8e8e8e;
+    --color-accent: #3897f0;
+    --background: #fafafa;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: column;
+    background-color: white;
+    width: 100%;
+    max-width: 980px;
+    margin: 50px, 0;
+    margin-top: 100px;
+    padding: var(--padding-medium);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: var(--padding-large);
+}
+
+.insta-img {
+    width: 164px;
+    padding: var(--padding-medium);
+}
+
+.input-field {
+    padding: var(--padding-medium);
+    margin-bottom: var(--padding-small);
+    background-color:#fafafa;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: var(--padding-medium);
+    margin-top: var(--padding-small);
+    margin-bottom: var(--padding-small);
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#0061bb;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.divider span {
+    margin: 0 10px;
+    font-size: var(--font-small);
+    color:#8e8e8e;
+}
+
+.facebook-login {
+    font-weight: bold;
+    font-size: var(--font-medium);
+    color: #385185;
+    padding: var(--padding-small);
+    text-decoration: none;
+}
+
+.forgot-link {
+    font-size: 12px;
+    text-decoration: none;
+    color: #00376b;
+    padding: var(--padding-small);
+}
+
+.signup-link a {
+    text-decoration: none;
+    color:#00376b
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.get-app {
+    margin-top: 48px;
+}
+
+.languages {
+    text-align: center;
+    font-size: var(--font-medium);
+    color: #8e8e8e;
+    margin-top: 20px;
+}
+
+.languages a {
+    margin: 0 10px;
+    color: #00376b;
+    text-decoration: none;
+}
+
+.languages a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    font-size: var(--font-small);
+    text-align: center;
+    color:#8e8e8e
+}
