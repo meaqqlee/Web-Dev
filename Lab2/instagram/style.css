@@ -40,7 +40,7 @@ body {
     height: auto;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
     margin: var(--padding-large);
@@ -52,6 +52,7 @@ form {
 }
 
 .input-field {
+    border-radius: 4px;
     padding: var(--padding-medium);
     margin-bottom: var(--padding-small);
     background-color:#fafafa;
@@ -59,6 +60,7 @@ form {
 }
 
 button {
+    border-radius: 4px;
     padding: var(--padding-medium);
     margin-top: var(--padding-small);
     margin-bottom: var(--padding-small);
@@ -116,7 +118,13 @@ a:hover {
 }
 
 .get-app {
+    text-align: center;
     margin-top: 48px;
+}
+
+.get-app img {
+    height: 48px;
+    margin: 6px;
 }
 
 .languages {
