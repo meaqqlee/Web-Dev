@@ -1,0 +1,131 @@
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 48px;
+}
+
+/* left container */
+.left-container {
+    margin: 12px;
+    height: 80%;
+}
+
+.left-container img {
+    height: 650px;
+}
+
+/* right container */
+.right-container {
+    width: 30%;
+    height: 80%;
+}
+
+.form {
+    border: 1px solid rgb(227, 227, 227);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+}
+
+.form h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input, button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input {
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 2px;
+    padding: 10px;
+    margin: 3px;
+    background-color:rgb(246, 246, 246);
+}
+
+button {
+    background-color: rgb(34, 196, 255);
+    color: white;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 5px;
+    padding: 8px;
+    margin: 9px;
+}
+
+button:hover {
+    background-color:#0061bb;
+}
+
+.divider {
+    display: flex;
+}
+
+.divider span {
+    color:#8e8e8e;
+    text-align: center;
+}
+
+.facebook-login::before {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg');
+    background-size: contain;
+}
+
+.facebook-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0px;
+    color: #007aed;
+    text-decoration: none;
+    gap: 8px;
+}
+
+.forgot-link {
+    text-align: center;
+    text-decoration: none;
+    color: #13314d
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.sign-up {
+    border: 1px solid rgb(227, 227, 227);
+    margin: 12px 0px;
+    width: 100%;
+    height: 58px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up a {
+    color: #007aed;
+}
+
+.get-app {
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    font-size: var(--font-small);
+    text-align: center;
+    color:#8e8e8e
+}
