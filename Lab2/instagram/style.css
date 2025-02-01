@@ -1,73 +1,63 @@
-:root {
-    /* font-sizes */
-    --font-small: 12px;
-    --font-medium: 16x;
-    --font-large: 24px;
-
-    /* paddings */
-    --padding-small: 8px;
-    --padding-medium: 12px;
-    --padding-large: 16px;
-
-    /* colors */
-    --color-primary: #262626;
-    --color-secondary: #8e8e8e;
-    --color-accent: #3897f0;
-    --background: #fafafa;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color:var(--background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-    display: column;
-    background-color: white;
-    width: 100%;
-    max-width: 980px;
-    margin: 50px, 0;
-    margin-top: 100px;
-    padding: var(--padding-medium);
+    display: flex;
+    height: 100%;
     justify-content: center;
-    align-items: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    height: auto;
+    margin: 48px;
+}
+
+/* left container */
+.left-container {
+    margin: 12px;
+    height: 80%;
+}
+
+.left-container img {
+    height: 650px;
+}
+
+/* right container */
+.right-container {
+    width: 20%;
+    height: 80%;
 }
 
 .form {
+    border: 1px solid rgb(227, 227, 227);
     display: flex;
     flex-direction: column;
-    margin: var(--padding-large);
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
 }
 
-.insta-img {
-    width: 164px;
-    padding: var(--padding-medium);
+.form h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.input-field {
-    border-radius: 4px;
-    padding: var(--padding-medium);
-    margin-bottom: var(--padding-small);
-    background-color:#fafafa;
-    border: 1px solid #ddd;
+input, button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input {
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 2px;
+    padding: 10px;
+    margin: 3px;
+    background-color:rgb(246, 246, 246);
 }
 
 button {
-    border-radius: 4px;
-    padding: var(--padding-medium);
-    margin-top: var(--padding-small);
-    margin-bottom: var(--padding-small);
-    background-color: #3897f0;
+    background-color: rgb(34, 196, 255);
     color: white;
-    border: none;
-    cursor: pointer;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 5px;
+    padding: 8px;
+    margin: 9px;
 }
 
 button:hover {
@@ -76,72 +66,62 @@ button:hover {
 
 .divider {
     display: flex;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.divider::before, .divider::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background-color: #ddd;
 }
 
 .divider span {
-    margin: 0 10px;
-    font-size: var(--font-small);
     color:#8e8e8e;
+    text-align: center;
+}
+
+.facebook-login::before {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg');
+    background-size: contain;
 }
 
 .facebook-login {
-    font-weight: bold;
-    font-size: var(--font-medium);
-    color: #385185;
-    padding: var(--padding-small);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0px;
+    color: #007aed;
     text-decoration: none;
+    gap: 8px;
 }
 
 .forgot-link {
-    font-size: 12px;
+    text-align: center;
     text-decoration: none;
-    color: #00376b;
-    padding: var(--padding-small);
+    color: #13314d
 }
 
-.signup-link a {
-    text-decoration: none;
-    color:#00376b
-}
-
-a:hover {
+.forgot-link:hover {
     text-decoration: underline;
+}
+
+.sign-up {
+    border: 1px solid rgb(227, 227, 227);
+    margin: 12px 0;
+    width: 100%;
+    height: 58px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up a {
+    color: #007aed;
 }
 
 .get-app {
-    text-align: center;
-    margin-top: 48px;
-}
-
-.get-app img {
-    height: 48px;
-    margin: 6px;
-}
-
-.languages {
-    text-align: center;
-    font-size: var(--font-medium);
-    color: #8e8e8e;
-    margin-top: 20px;
-}
-
-.languages a {
-    margin: 0 10px;
-    color: #00376b;
-    text-decoration: none;
-}
-
-.languages a:hover {
-    text-decoration: underline;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
