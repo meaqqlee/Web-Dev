@@ -4,8 +4,11 @@
     <p>{{ product.description }}</p>
     <p>Rating: {{ product.rating }}</p>
     <span class="like-section">
-        <button>Like</button>
+        <button (click)="toggleLike()" [class.liked]="isLiked">
+            {{ isLiked ? 'Unlike' : 'Like' }}
+        </button>
         <p>likes: {{ product.like }}</p>
     </span>
     <a [href]="product.link">View Details</a>
+    <button class="remove-button" (click)="remove()">remove product</button>
 </div>

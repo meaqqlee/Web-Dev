@@ -104,7 +104,7 @@ export class DataService {
         'https://resources.cdn-kaspi.kz/img/m/p/p4a/p76/17913535.png?format=gallery-medium',
       ],
       like: 0,
-      categoryId: 0
+      categoryId: 3
     },
     {
       id: 7,
@@ -118,7 +118,7 @@ export class DataService {
         'https://resources.cdn-kaspi.kz/img/m/p/h50/hd0/84930731540510.jpg?format=gallery-medium',
       ],
       like: 0,
-      categoryId: 0
+      categoryId: 2
     },
     {
       id: 8,
@@ -133,7 +133,7 @@ export class DataService {
         'https://resources.cdn-kaspi.kz/img/m/p/hfe/h17/64208876634142.jpg?format=gallery-medium'
       ],
       like: 0,
-      categoryId: 0
+      categoryId: 2
     },
     {
       id: 9,
@@ -148,7 +148,7 @@ export class DataService {
         'https://resources.cdn-kaspi.kz/img/m/p/h04/h8b/87295489409054.png?format=gallery-medium'
       ],
       like: 0,
-      categoryId: 0
+      categoryId: 1
     },
     {
       id: 10,
@@ -163,7 +163,7 @@ export class DataService {
         'https://resources.cdn-kaspi.kz/img/m/p/hce/h21/84963123462174.png?format=gallery-medium'
       ],
       like: 0,
-      categoryId: 0
+      categoryId: 1
     }
   ];
 
@@ -184,5 +184,10 @@ export class DataService {
       return this.getAllProducts();
     }
     return this.products.filter(product => categoryIds.includes(product.categoryId));
+  }
+
+  removeProduct(productId: number): void {
+    this.products = this.products.filter(product => product.id !== productId);
+    this.selectedCategoriesSubject.next(this.selectedCategoriesSubject.getValue());
   }
 }
