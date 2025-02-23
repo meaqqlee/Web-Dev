@@ -1,0 +1,11 @@
+<div class="card">
+    <img [src]="product.image" alt="{{ product.name }}">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    <p>Rating: {{ product.rating }}</p>
+    <span class="like-section">
+        <button>Like</button>
+        <p>likes: {{ product.like }}</p>
+    </span>
+    <a [href]="product.link">View Details</a>
+</div>

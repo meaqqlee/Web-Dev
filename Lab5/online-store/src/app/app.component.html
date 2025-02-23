@@ -1,0 +1,22 @@
+<div class="navbar">
+    <div class="logo">FuturaShop</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h1>Welcome to FuturaShop</h1>
+    <div class="category-filter">
+        <button
+                *ngFor="let category of categories"
+                (click)="onCategorySelect(category.id)"
+                [class.active]="selectedCategories.includes(category.id)">
+            {{ category.name }}
+        </button>
+    </div>
+    <app-product-list></app-product-list>
+</div>

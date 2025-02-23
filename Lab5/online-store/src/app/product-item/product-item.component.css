@@ -1,0 +1,53 @@
+:root {
+    --primary-bg: #0a0a0a;
+    --secondary-color: #ffcc00;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 6px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    min-height: 190px;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 140px;
+    border-radius: 10px;
+    height: 140px;
+}
+
+.card button {
+    border: none;
+    background: var(--secondary-color);
+    color: rgb(85, 85, 85);
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+.like-section {
+    display: flex;
+    align-items: center;
+}
+
+.card button:hover {
+    background: rgb(207, 162, 0);
+}
+
+.card a {
+    color: var(--secondary-color);
+}
