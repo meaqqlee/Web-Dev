@@ -1,0 +1,24 @@
+
+nav {
+  margin-bottom: 20px;
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #777777;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  color: #ff0000;
+}
+
+.active-link {
+  background-color: #ffc400;
+  color: white !important;
+}

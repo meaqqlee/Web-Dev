@@ -1,0 +1,14 @@
+<div class="detail-container" *ngIf="album">
+  <h2>Album Details</h2>
+  <div class="detail-card">
+    <div class="form-group">
+      <label>Title:</label>
+      <input [(ngModel)]="editedTitle" class="form-input">
+    </div>
+    <div class="button-group">
+      <button (click)="saveChanges()" class="save-btn">Save</button>
+      <a [routerLink]="['/albums']" class="return-btn">Return</a>
+      <a [routerLink]="['/albums', album.id, 'photos']" class="photos-link">Photos</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="albums-container">
+  <h2>Albums</h2>
+  <div class="albums-grid">
+    <div *ngFor="let album of albums$ | async" class="album-card">
+      <a [routerLink]="['/albums', album.id]" class="album-title">{{ album.title }}</a>
+      <button (click)="deleteAlbum(album.id)" class="delete-btn">×</button>
+    </div>
+  </div>
+</div>
